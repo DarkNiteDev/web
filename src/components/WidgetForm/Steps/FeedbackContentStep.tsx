@@ -1,6 +1,7 @@
 import { ArrowLeft, Camera } from "phosphor-react";
 import { FeedbackType, feedbackTypes } from "..";
 import { CloseButton } from "../../CloseButton";
+import { ScreenshotButton } from "../ScreenshotButton";
 
 interface FeedbackContentStepProps {
     feedbackType: FeedbackType;
@@ -38,12 +39,7 @@ export function FeedbackContentStep({
             />
 
             <footer className="flex gap-2 mt-2" >
-                <button
-                    type="button"
-                    className="p-2 bg-zinc-800 rounded-md border-transparent"
-                >
-                    <Camera className="w-6 h-6"/>
-                </button>
+                <ScreenshotButton />
 
                 <button
                 type="submit"
